@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="card">
+            <button type="button" class="btn-start" id="btn-toggle" data-state="idle">Bắt đầu</button>
+            <div id="win-message" class="win-message hidden">
+                YOU WIN!
+            </div>
+            <div class="main-row">
+                <div class="puzzle-wrap">
+                    <div class="puzzle-border">
+                        <div class="puzzle-grid">
+                            <div class="tile c1">1</div>
+                            <div class="tile c2">2</div>
+                            <div class="tile c3">3</div>
+                            <div class="tile c4">4</div>
+                            <div class="tile c5">5</div>
+                            <div class="tile c6">6</div>
+                            <div class="tile c7">7</div>
+                            <div class="tile c8">8</div>
+                            <div class="tile c9">9</div>
+                            <div class="tile c10">10</div>
+                            <div class="tile c11">11</div>
+                            <div class="tile empty"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="sidebar">
+                    <div class="time-box">
+                        <h2>Đồng hồ</h2>
+                        <div class="time" id="clockdisplay">00:00</div>
+                    </div>
+                    <div class="guidebox">
+                        <h3>Hướng dẫn di chuyển</h2>
+                            <div class="arrow">
+                                <span class="pad ">↑</span>
+                                <span class="pad ">↓</span>
+                                <span class="pad ">→</span>
+                                <span class="pad ">←</span>
+                            </div>
+                            <div class="key">
+                                <div class="char">A</div>
+                                <div class="char">W</div>
+                                <div class="char">S</div>
+                                <div class="char">D</div>
+                            </div>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="history">
+                <h2 class="historyGame">Lịch sử lượt chơi</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Bước đi</th>
+                                <th>Thời gian</th>
+                            </tr>
+                        </thead>
+                        <tbody id="history-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
